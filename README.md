@@ -33,9 +33,9 @@ Brief Explanation and Analysis are provided below each cell, as Markdown
 
 ## Author
 
-Nishaf P Abdul Majeed
-Senior Data Architect/Modeler
-[nishafpa@gmail.com](mailto:nishafpa@gmail.com)
+Nishaf P Abdul Majeed<BR>
+Senior Data Architect/Modeler<BR>
+[nishafpa@gmail.com](mailto:nishafpa@gmail.com)<BR>
 [LinkedIn](https://www.linkedin.com/in/nishaf-abdul-majeed-04b13ba3/)
 
 ## Version History
