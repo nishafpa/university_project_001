@@ -25,7 +25,7 @@ Obviously, proximity to the business is a factor on whether the coupon is delive
 ### Executing program
 
 * Click the below URL to Navigate to the Code, to Download and to Execute on any Python Notebook Cell by Cell from Top to Bottom
-* [Will the Customer Accept the Coupon?](https://github.com/nishafpa/university-project/CustomerCouponAcceptance.ipynb)
+* [Will the Customer Accept the Coupon?](https://github.com/nishafpa/university_project_001/CustomerCouponAcceptance.ipynb)
 
 ## Help
 
