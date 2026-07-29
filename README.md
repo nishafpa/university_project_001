@@ -4,7 +4,11 @@ UC Berkely Professional Certificate for ML &amp; AI - Required Assignment 11.1: 
 
 ## Description
 
+<<<<<<< HEAD
 This assignment identifies what factors make a car more or less expensive. The data set contains various features of the vehicle such as year, manufacturer, model, condition, cylinders, fuel, odometer, title_status, transmission, drive, size, type, paint_color, state etc. The model identifies which features contribute the car price the most and the least.
+=======
+This assignment identifies what factors make a car more or less expensive. The data set contains various features of the vehicle such as year, manufacturer,model, condition, cylinders, fuel, odometer, title_status, transmission, drive, size, type, paint_color, state etc. The model identifies which features contribute the car price the most and the least.
+>>>>>>> c35ca9e1e807a79e16316eeb9e897c4edc1ec1bc
 
 ## Getting Started
 
