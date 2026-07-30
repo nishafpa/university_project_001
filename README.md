@@ -4,18 +4,18 @@ UC Berkely Professional Certificate for ML &amp; AI - Required Assignment 11.1: 
 
 ## Description
 
-This assignment identifies what factors make a car more or less expensive. The data set contains various features of the vehicle such as year, manufacturer, model, condition, cylinders, fuel, odometer, title_status, transmission, drive, size, type, paint_color, state etc. The model identifies which features contribute the car price the most and the least.
+This assignment identifies what factors make a car more or less expensive. The data set contains various features of the vehicle such as year, manufacturer, model, condition, cylinders, fuel, odometer, title_status, transmission, drive, size, type, paint_color, state etc. The model identifies which features contribute the car price the most.
 
 ## Getting Started
 
 ### Dependencies
 
-* This Python assignment references the Libraries - NISHAF pandas, matplotlib, seaborn and numpy
+* This Python assignment references the Libraries - numpy, pandas, matplotlib, seaborn, and scikit-learn
 
 ### Installing
 
 * Using the below command, install the required Libraries
-* NISHAF %pip install pandas matplotlib seaborn numpy
+* %pip install numpy pandas matplotlib seaborn scikit-learn
 * For the convenience, it is included as the first cell in the Python Code
 
 ### Executing program
@@ -25,7 +25,7 @@ This assignment identifies what factors make a car more or less expensive. The d
 
 ## Help
 
-Brief Explanation and Analysis are provided below each cell, as Markdown
+Brief Explanation and Analysis are provided below each cell, as Cell Output and Markdown
 
 ## Author
 
@@ -36,8 +36,7 @@ Senior Data Architect/Modeler<BR>
 
 ## Version History
 
-* 0.1
-    * Initial Release
+* 0.1 - Initial Release
 
 ## License
 
@@ -49,4 +48,4 @@ UC Berkely Tutors for this Professional Course in Machine Learning and Artificia
 
 ## Brief Report to the Used Car Dealership
 
-NISHAF The odometer is the most influencing factor of the used vehicle price.
+Top 3 Parameters that affect the Vehicle Price the most are Vehicle's Year of Manufacturing, Vehicle's Condition such as Excellent and Vehicle's Type such as SUV, Sedan etc. in that order. So, it is advised to source the vehicles with these top 3 parameters to boost the inventory and potentially maximize the Sales Volume and Revenue.
