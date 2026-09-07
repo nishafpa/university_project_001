@@ -1,27 +1,21 @@
 # Project Title
 
-UC Berkely Professional Certificate for ML &amp; AI - Required Assignment 11.1: What Drives the Price of a Car?
+UC Berkely Professional Certificate for ML &amp; AI - Required Assignment 17.1: Comparing Classifiers
 
 ## Description
 
-This assignment identifies what factors make a car more or less expensive. The data set contains various features of the vehicle such as year, manufacturer, model, condition, cylinders, fuel, odometer, title_status, transmission, drive, size, type, paint_color, state etc. The model identifies which features contribute the car price the most.
+This assignment is to compare various Classifier models such as KNN, Logistic Regression, Decision Trees and SVM (Support Vector Machine), in terms of the Performance such as Training Time, Test time, Hyperparameter Tuning time along with the Accuracy Score. The data used for this exercise is the direct marketing campaigns (phone calls) of a Portuguese banking institution. The classification goal is to predict if the client will subscribe a term deposit or not, based on various input features such as Bank Client data, Current and Overall Campaign Related data and Economic Indicator Related data.
 
 ## Getting Started
 
 ### Dependencies
 
-* This Python assignment references the Libraries - numpy, pandas, matplotlib, seaborn, and scikit-learn
-
-### Installing
-
-* Using the below command, install the required Libraries
-* %pip install numpy pandas matplotlib seaborn scikit-learn
-* For the convenience, it is included as the first cell in the Python Code
+* This Python assignment references the Libraries - pandas, matplotlib, seaborn, time, warnings and sklearn (scikit-learn)
 
 ### Executing program
 
 * Click the below URL to Navigate to the Code, to Download and to Execute on any Python Notebook Cell by Cell from Top to Bottom
-* [What Drives the Price of a Car?](https://github.com/nishafpa/university_project_001/blob/main/UsedCarSale.ipynb)
+* [Classifier Models Comparison](https://github.com/nishafpa/university_project_001/blob/main/TermDepositPrediction.ipynb)
 
 ## Help
 
@@ -46,6 +40,15 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 UC Berkely Tutors for this Professional Course in Machine Learning and Artificial Intelligence
 
-## Brief Report to the Used Car Dealership
+## Summary of the Findings
 
-Top 3 Parameters that affect the Vehicle Price the most are Vehicle's Year of Manufacturing, Vehicle's Condition such as Excellent and Vehicle's Type such as SUV, Sedan etc. in that order. So, it is advised to source the vehicles with these top 3 parameters to boost the inventory and potentially maximize the Sales Volume and Revenue.
+With the default parameters, below is the Summary of the Model Performance and Accuracy:
+1) Elapsed Train Time - SVM Polynomial Kernel is the most time consuming to Train.
+2) Train Accuracy - Decision Trees outperformed. Rest all models outperformed the baseline Dummy model and their Train Accuracy is more or less similar.
+3) Test Accuracy - Decision Trees was great in Train Accuracy, it performed worst in Test Accuracy, even lower than the baseline Dummy model. Rest all models performed more or less similar leading by LinearSVC.
+
+After the Hyperparameters tuning, below is the Summary of the Model Performance and Accuracy:
+1) Elapsed Hyperparameter Tuning Time - Logistic Regression took the longest time to tune the Hyperparameters. SVM (Poly) is another slowest, which would have taken even longer time without 3GB Cache_size. LinearSVC is the fastest to tune the Hyperparameters.
+2) Elapsed Train Time - SVM Polynomial Kernel and Logistic Regression are the most time consuming to Train. KNN is the fastest.
+3) Train Accuracy - KNN outperformed. SVM (Poly) dropped its Train Accuracy a lot since the tuning parameters are limited due to the performance impact on the tuning time.
+4) Test Accuracy - KNN outperformed in Test Accuracy as well. SVM (Poly) dropped its Test Accuracy a lot as well since the tuning parameters are limited due to the performance impact on the tuning time.
