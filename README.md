@@ -1,21 +1,33 @@
 # Project Title
 
-UC Berkely Professional Certificate for ML &amp; AI - Required Assignment 17.1: Comparing Classifiers
+UC Berkely Professional Certificate for ML &amp; AI - Capstone Project: US Equity Closing Price Prediction
 
 ## Description
 
-This assignment is to compare various Classifier models such as KNN, Logistic Regression, Decision Trees and SVM (Support Vector Machine), in terms of the Performance such as Training Time, Test time, Hyperparameter Tuning time along with the Accuracy Score. The data used for this exercise is the direct marketing campaigns (phone calls) of a Portuguese banking institution. The classification goal is to predict if the client will subscribe a term deposit or not, based on various input features such as Bank Client data, Current and Overall Campaign Related data and Economic Indicator Related data.
+This project is to predict the Equity closing price of the US stock market listed equities based on the historical data such as Endogenous and Exogenous variables (Features).
+
+Endogenous variables of the equity closing price prediction are Open, Low, High, Close/Adjusted Close and Volume from Yahoo Finance, and calculated values for Simple Moving Average (SMA), Exponential Moving Average (EMA), Moving Average Convergence Divergence (MACD) and Relative Strength Index (RSI).
+
+Exogenous variables of the equity closing price prediction are Benchmark Indices (S&P500 Index, NASDAQ Composite Index) from Yahoo Finance and Macroeconomic indicators from Federal Reserve Economic Data (FRED) database API (Interest Rates & Monetary Policy, Yield Curve & Bond Market Signals, Credit Spreads & Financial Stress, Liquidity & Money Supply and Inflation & Macro Growth).
+  
+The classical Time Series Analysis & Forecasting and LSTM (Long Short-Term Memory) in Recurrent Neural Networks (RNN) are used to predict the US Equity price. These models are compared against the Baseline Model Linear Regression, to understand the actual models beat the baseline model.
 
 ## Getting Started
 
 ### Dependencies
 
-* This Python assignment references the Libraries - pandas, matplotlib, seaborn, time, warnings and sklearn (scikit-learn)
+* This Python project references the Libraries - numpy, pandas, matplotlib, seaborn, yfinance, fredapi and scikit-learn
+
+### Installing
+
+* Using the below command, install the required Libraries
+* %pip install numpy pandas matplotlib seaborn yfinance fredapi scikit-learn
+* For the convenience, it is included as the first cell in the Python Code
 
 ### Executing program
 
 * Click the below URL to Navigate to the Code, to Download and to Execute on any Python Notebook Cell by Cell from Top to Bottom
-* [Classifier Models Comparison](https://github.com/nishafpa/university_project_001/blob/main/TermDepositPrediction.ipynb)
+* [US Equity Closing Price Prediction](https://github.com/nishafpa/university_project_001/blob/main/EquityClosingPricePrediction.ipynb)
 
 ## Help
 
@@ -40,15 +52,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 UC Berkely Tutors for this Professional Course in Machine Learning and Artificial Intelligence
 
-## Summary of the Findings
+## Brief Report to Trader or Equity Fund Manager
 
-With the default parameters, below is the Summary of the Model Performance and Accuracy:
-1) Elapsed Train Time - SVM Polynomial Kernel is the most time consuming to Train.
-2) Train Accuracy - Decision Trees outperformed. Rest all models outperformed the baseline Dummy model and their Train Accuracy is more or less similar.
-3) Test Accuracy - Decision Trees was great in Train Accuracy, it performed worst in Test Accuracy, even lower than the baseline Dummy model. Rest all models performed more or less similar leading by LinearSVC.
-
-After the Hyperparameters tuning, below is the Summary of the Model Performance and Accuracy:
-1) Elapsed Hyperparameter Tuning Time - Logistic Regression took the longest time to tune the Hyperparameters. SVM (Poly) is another slowest, which would have taken even longer time without 3GB Cache_size. LinearSVC is the fastest to tune the Hyperparameters.
-2) Elapsed Train Time - SVM Polynomial Kernel and Logistic Regression are the most time consuming to Train. KNN is the fastest.
-3) Train Accuracy - KNN outperformed. SVM (Poly) dropped its Train Accuracy a lot since the tuning parameters are limited due to the performance impact on the tuning time.
-4) Test Accuracy - KNN outperformed in Test Accuracy as well. SVM (Poly) dropped its Test Accuracy a lot as well since the tuning parameters are limited due to the performance impact on the tuning time.
+When a Trader or Equity Fund Manager wants to invest in a particular Equity or the Equity Fund on behalf of their firm or their clients, the Prediction of the future closing price would help to make their decision. Without a Quantitative analysis, the decision would be based on guess work and it can potentially end up in wrong decision and can potentially lose the money. Quantitative analysis would help to decrease or minimize the money loss for the firm or their clients. But, be careful that even the best models cannot predict 100% accuracy, but can minimize the loss.
