@@ -56,7 +56,7 @@ UC Berkely Tutors for this Professional Course in Machine Learning and Artificia
 
 Although not needed, the same code base is implemented as a Streamlit GUI Application. The Python file (EquityClosingPricePrediction.py) is exactly same as the original notebook code, except some output message cleanup. The current memory resource limit (around 2.7GB RAM) in Streamlit Community Cloud is not sufficient to execute the currently deployed models. That's the reason, it was not created as an App to execute from Web URL. So, if the Streamlit library is installed locally, it can be executed as Windows command, as depicted below.
 
-<PATH>\streamlit.exe run <PATH>/EquityClosingPricePrediction.py
+c:\> streamlit.exe run EquityClosingPricePrediction.py (Please provide the correct directory path for the exe and py files)
 
 Once the above command is executed, the Web Browser is opened with the application launched. Then follow the prompts on the Web application.
 
